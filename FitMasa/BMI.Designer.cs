@@ -161,6 +161,7 @@
             // btnUstawienia
             // 
             this.btnUstawienia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            this.btnUstawienia.Enabled = false;
             this.btnUstawienia.FlatAppearance.BorderSize = 0;
             this.btnUstawienia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);

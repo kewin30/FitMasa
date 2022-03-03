@@ -15,16 +15,17 @@ namespace FitMasa
 {
     public partial class Produkt : Form
     {
+        public event EventHandler<double[]> DodanoProdukt;
 
         public Produkt()
         {
             InitializeComponent();
         }
 
-        public static double[] kalorie = new double[5];
-        public static double[] bialko = new double[5];
-        public static double[] wegl = new double[5];
-        public static double[] tluszcze = new double[5];
+        public double[] kalorie = new double[4];
+        public double[] bialko = new double[4];
+        public double[] wegl = new double[4];
+        public double[] tluszcze = new double[4];
         async Task Wyszukaj()
         {
 
@@ -187,53 +188,55 @@ namespace FitMasa
             automat(check2, num2, 1);
             automat(check3, num3, 2);
             automat(check4, num4, 3);
-            Form1 form = new Form1();
-            form.Show();
-            this.Hide();
+            this.Close();
+            this.DodanoProdukt?.Invoke(this, new double[] { kalorie[0], bialko[0], wegl[0], tluszcze[0]});
+            this.DodanoProdukt?.Invoke(this, new double[] { kalorie[1], bialko[1], wegl[1], tluszcze[1]});
+            this.DodanoProdukt?.Invoke(this, new double[] { kalorie[2], bialko[2], wegl[2], tluszcze[2]});
+            this.DodanoProdukt?.Invoke(this, new double[] { kalorie[3], bialko[3], wegl[3], tluszcze[3]});
 
 
-           /* if (check1.Checked == false)
-            {
-                kalorie[0] = 0;
-                bialko[0] = 0;
-                wegl[0] = 0;
-                tluszcze[0] = 0;
-            }
-            else
-            {
-                kalorie[0] = kalorie[0] + Convert.ToDouble(num1.Value);
-                bialko[0] = bialko[0] + Convert.ToDouble(num1.Value);
-                wegl[0] = wegl[0] + Convert.ToDouble(num1.Value);
-                tluszcze[0] = tluszcze[0] + Convert.ToDouble(num1.Value);
-            }
-            if (check2.Checked == false)
-            {
-                kalorie[1] = 0;
-                bialko[1] = 0;
-                wegl[1] = 0;
-                tluszcze[1] = 0;
-            }
-            else
-            {
-                kalorie[0] = kalorie[0] + Convert.ToDouble(num1.Value);
-                bialko[0] = bialko[0] + Convert.ToDouble(num1.Value);
-                wegl[0] = wegl[0] + Convert.ToDouble(num1.Value);
-                tluszcze[0] = tluszcze[0] + Convert.ToDouble(num1.Value);
-            }
-            if (check3.Checked == false)
-            {
-                kalorie[2] = 0;
-                bialko[2] = 0;
-                wegl[2] = 0;
-                tluszcze[2] = 0;
-            }
-            if (check4.Checked == false)
-            {
-                kalorie[3] = 0;
-                bialko[3] = 0;
-                wegl[3] = 0;
-                tluszcze[3] = 0;
-            }*/
+            /* if (check1.Checked == false)
+             {
+                 kalorie[0] = 0;
+                 bialko[0] = 0;
+                 wegl[0] = 0;
+                 tluszcze[0] = 0;
+             }
+             else
+             {
+                 kalorie[0] = kalorie[0] + Convert.ToDouble(num1.Value);
+                 bialko[0] = bialko[0] + Convert.ToDouble(num1.Value);
+                 wegl[0] = wegl[0] + Convert.ToDouble(num1.Value);
+                 tluszcze[0] = tluszcze[0] + Convert.ToDouble(num1.Value);
+             }
+             if (check2.Checked == false)
+             {
+                 kalorie[1] = 0;
+                 bialko[1] = 0;
+                 wegl[1] = 0;
+                 tluszcze[1] = 0;
+             }
+             else
+             {
+                 kalorie[0] = kalorie[0] + Convert.ToDouble(num1.Value);
+                 bialko[0] = bialko[0] + Convert.ToDouble(num1.Value);
+                 wegl[0] = wegl[0] + Convert.ToDouble(num1.Value);
+                 tluszcze[0] = tluszcze[0] + Convert.ToDouble(num1.Value);
+             }
+             if (check3.Checked == false)
+             {
+                 kalorie[2] = 0;
+                 bialko[2] = 0;
+                 wegl[2] = 0;
+                 tluszcze[2] = 0;
+             }
+             if (check4.Checked == false)
+             {
+                 kalorie[3] = 0;
+                 bialko[3] = 0;
+                 wegl[3] = 0;
+                 tluszcze[3] = 0;
+             }*/
         }
 
         private void btnZamknij_Click_1(object sender, EventArgs e)

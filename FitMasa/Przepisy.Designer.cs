@@ -96,6 +96,7 @@
             // btnUstawienia
             // 
             this.btnUstawienia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            this.btnUstawienia.Enabled = false;
             this.btnUstawienia.FlatAppearance.BorderSize = 0;
             this.btnUstawienia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -302,7 +303,7 @@
             this.btnCzytaj1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
             this.btnCzytaj1.Image = ((System.Drawing.Image)(resources.GetObject("btnCzytaj1.Image")));
             this.btnCzytaj1.Location = new System.Drawing.Point(205, 8);
-            this.btnCzytaj1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCzytaj1.Margin = new System.Windows.Forms.Padding(2);
             this.btnCzytaj1.Name = "btnCzytaj1";
             this.btnCzytaj1.Size = new System.Drawing.Size(241, 614);
             this.btnCzytaj1.TabIndex = 5;
@@ -318,7 +319,7 @@
             this.btnCzytaj2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
             this.btnCzytaj2.Image = ((System.Drawing.Image)(resources.GetObject("btnCzytaj2.Image")));
             this.btnCzytaj2.Location = new System.Drawing.Point(451, 8);
-            this.btnCzytaj2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCzytaj2.Margin = new System.Windows.Forms.Padding(2);
             this.btnCzytaj2.Name = "btnCzytaj2";
             this.btnCzytaj2.Size = new System.Drawing.Size(241, 614);
             this.btnCzytaj2.TabIndex = 6;
@@ -333,7 +334,7 @@
             this.btnCzytaj3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
             this.btnCzytaj3.Image = ((System.Drawing.Image)(resources.GetObject("btnCzytaj3.Image")));
             this.btnCzytaj3.Location = new System.Drawing.Point(696, 8);
-            this.btnCzytaj3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCzytaj3.Margin = new System.Windows.Forms.Padding(2);
             this.btnCzytaj3.Name = "btnCzytaj3";
             this.btnCzytaj3.Size = new System.Drawing.Size(241, 614);
             this.btnCzytaj3.TabIndex = 7;
@@ -351,7 +352,7 @@
             this.Controls.Add(this.btnCzytaj1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dania";
             this.Text = "Dania";
             this.groupBox2.ResumeLayout(false);

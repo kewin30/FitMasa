@@ -93,6 +93,7 @@
             // btnUstawienia
             // 
             this.btnUstawienia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            this.btnUstawienia.Enabled = false;
             this.btnUstawienia.FlatAppearance.BorderSize = 0;
             this.btnUstawienia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -326,7 +327,7 @@
             // 
             this.zdjPrzed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(89)))), ((int)(((byte)(205)))));
             this.zdjPrzed.Location = new System.Drawing.Point(233, 195);
-            this.zdjPrzed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.zdjPrzed.Margin = new System.Windows.Forms.Padding(2);
             this.zdjPrzed.Name = "zdjPrzed";
             this.zdjPrzed.Size = new System.Drawing.Size(267, 260);
             this.zdjPrzed.TabIndex = 52;
@@ -336,7 +337,7 @@
             // 
             this.zdjPo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(89)))), ((int)(((byte)(205)))));
             this.zdjPo.Location = new System.Drawing.Point(633, 195);
-            this.zdjPo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.zdjPo.Margin = new System.Windows.Forms.Padding(2);
             this.zdjPo.Name = "zdjPo";
             this.zdjPo.Size = new System.Drawing.Size(267, 260);
             this.zdjPo.TabIndex = 53;
@@ -360,7 +361,7 @@
             this.btnDodajPrzed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajPrzed.ForeColor = System.Drawing.Color.White;
             this.btnDodajPrzed.Location = new System.Drawing.Point(233, 481);
-            this.btnDodajPrzed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajPrzed.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajPrzed.Name = "btnDodajPrzed";
             this.btnDodajPrzed.Size = new System.Drawing.Size(133, 39);
             this.btnDodajPrzed.TabIndex = 55;
@@ -375,7 +376,7 @@
             this.btnDodajPo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajPo.ForeColor = System.Drawing.Color.White;
             this.btnDodajPo.Location = new System.Drawing.Point(633, 481);
-            this.btnDodajPo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajPo.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajPo.Name = "btnDodajPo";
             this.btnDodajPo.Size = new System.Drawing.Size(133, 39);
             this.btnDodajPo.TabIndex = 56;
@@ -398,7 +399,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Progress";
             this.Text = "Progress";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

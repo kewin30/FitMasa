@@ -47,35 +47,14 @@
             this.btnDania = new System.Windows.Forms.Button();
             this.btnStronaGlowna = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnUsunP = new System.Windows.Forms.Button();
             this.btnDodajP = new System.Windows.Forms.Button();
-            this.btnUsunDS = new System.Windows.Forms.Button();
             this.btnDodajDS = new System.Windows.Forms.Button();
-            this.btnUsunK = new System.Windows.Forms.Button();
             this.btnDodajK = new System.Windows.Forms.Button();
-            this.btnUsunO = new System.Windows.Forms.Button();
             this.btnDodajO = new System.Windows.Forms.Button();
-            this.btnUsunS = new System.Windows.Forms.Button();
             this.btnDodajS = new System.Windows.Forms.Button();
-            this.lBialkP = new System.Windows.Forms.Label();
-            this.lTlusP = new System.Windows.Forms.Label();
-            this.lWeglP = new System.Windows.Forms.Label();
-            this.lKcalP = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lBialkDS = new System.Windows.Forms.Label();
-            this.lTlusDS = new System.Windows.Forms.Label();
-            this.lWeglDS = new System.Windows.Forms.Label();
-            this.lKcalDS = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lBialkK = new System.Windows.Forms.Label();
-            this.lTlusK = new System.Windows.Forms.Label();
-            this.lWeglK = new System.Windows.Forms.Label();
-            this.lKcalK = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lBialkO = new System.Windows.Forms.Label();
-            this.lTlusO = new System.Windows.Forms.Label();
-            this.lWeglO = new System.Windows.Forms.Label();
-            this.lKcalO = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lBialkS = new System.Windows.Forms.Label();
             this.lTlusS = new System.Windows.Forms.Label();
@@ -165,6 +144,7 @@
             // btnUstawienia
             // 
             this.btnUstawienia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            this.btnUstawienia.Enabled = false;
             this.btnUstawienia.FlatAppearance.BorderSize = 0;
             this.btnUstawienia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -333,35 +313,14 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnUsunP);
             this.groupBox3.Controls.Add(this.btnDodajP);
-            this.groupBox3.Controls.Add(this.btnUsunDS);
             this.groupBox3.Controls.Add(this.btnDodajDS);
-            this.groupBox3.Controls.Add(this.btnUsunK);
             this.groupBox3.Controls.Add(this.btnDodajK);
-            this.groupBox3.Controls.Add(this.btnUsunO);
             this.groupBox3.Controls.Add(this.btnDodajO);
-            this.groupBox3.Controls.Add(this.btnUsunS);
             this.groupBox3.Controls.Add(this.btnDodajS);
-            this.groupBox3.Controls.Add(this.lBialkP);
-            this.groupBox3.Controls.Add(this.lTlusP);
-            this.groupBox3.Controls.Add(this.lWeglP);
-            this.groupBox3.Controls.Add(this.lKcalP);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.lBialkDS);
-            this.groupBox3.Controls.Add(this.lTlusDS);
-            this.groupBox3.Controls.Add(this.lWeglDS);
-            this.groupBox3.Controls.Add(this.lKcalDS);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.lBialkK);
-            this.groupBox3.Controls.Add(this.lTlusK);
-            this.groupBox3.Controls.Add(this.lWeglK);
-            this.groupBox3.Controls.Add(this.lKcalK);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.lBialkO);
-            this.groupBox3.Controls.Add(this.lTlusO);
-            this.groupBox3.Controls.Add(this.lWeglO);
-            this.groupBox3.Controls.Add(this.lKcalO);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.lBialkS);
             this.groupBox3.Controls.Add(this.lTlusS);
@@ -372,100 +331,55 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Transparent;
             this.groupBox3.Location = new System.Drawing.Point(200, 162);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(800, 467);
+            this.groupBox3.Size = new System.Drawing.Size(700, 467);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            // 
-            // btnUsunP
-            // 
-            this.btnUsunP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            this.btnUsunP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUsunP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnUsunP.Location = new System.Drawing.Point(584, 260);
-            this.btnUsunP.Name = "btnUsunP";
-            this.btnUsunP.Size = new System.Drawing.Size(80, 29);
-            this.btnUsunP.TabIndex = 34;
-            this.btnUsunP.Text = "Usun";
-            this.btnUsunP.UseVisualStyleBackColor = false;
             // 
             // btnDodajP
             // 
             this.btnDodajP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.btnDodajP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnDodajP.Location = new System.Drawing.Point(464, 260);
+            this.btnDodajP.Location = new System.Drawing.Point(187, 211);
             this.btnDodajP.Name = "btnDodajP";
             this.btnDodajP.Size = new System.Drawing.Size(80, 29);
             this.btnDodajP.TabIndex = 33;
             this.btnDodajP.Text = "Dodaj";
             this.btnDodajP.UseVisualStyleBackColor = false;
-            // 
-            // btnUsunDS
-            // 
-            this.btnUsunDS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            this.btnUsunDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUsunDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnUsunDS.Location = new System.Drawing.Point(584, 123);
-            this.btnUsunDS.Name = "btnUsunDS";
-            this.btnUsunDS.Size = new System.Drawing.Size(80, 29);
-            this.btnUsunDS.TabIndex = 32;
-            this.btnUsunDS.Text = "Usun";
-            this.btnUsunDS.UseVisualStyleBackColor = false;
+            this.btnDodajP.Click += new System.EventHandler(this.btnDodajP_Click);
             // 
             // btnDodajDS
             // 
             this.btnDodajDS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.btnDodajDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnDodajDS.Location = new System.Drawing.Point(464, 123);
+            this.btnDodajDS.Location = new System.Drawing.Point(187, 104);
             this.btnDodajDS.Name = "btnDodajDS";
             this.btnDodajDS.Size = new System.Drawing.Size(80, 29);
             this.btnDodajDS.TabIndex = 31;
             this.btnDodajDS.Text = "Dodaj";
             this.btnDodajDS.UseVisualStyleBackColor = false;
-            // 
-            // btnUsunK
-            // 
-            this.btnUsunK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            this.btnUsunK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUsunK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnUsunK.Location = new System.Drawing.Point(147, 396);
-            this.btnUsunK.Name = "btnUsunK";
-            this.btnUsunK.Size = new System.Drawing.Size(80, 29);
-            this.btnUsunK.TabIndex = 30;
-            this.btnUsunK.Text = "Usun";
-            this.btnUsunK.UseVisualStyleBackColor = false;
+            this.btnDodajDS.Click += new System.EventHandler(this.btnDodajDS_Click);
             // 
             // btnDodajK
             // 
             this.btnDodajK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.btnDodajK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnDodajK.Location = new System.Drawing.Point(40, 396);
+            this.btnDodajK.Location = new System.Drawing.Point(187, 264);
             this.btnDodajK.Name = "btnDodajK";
             this.btnDodajK.Size = new System.Drawing.Size(80, 29);
             this.btnDodajK.TabIndex = 29;
             this.btnDodajK.Text = "Dodaj";
             this.btnDodajK.UseVisualStyleBackColor = false;
-            // 
-            // btnUsunO
-            // 
-            this.btnUsunO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            this.btnUsunO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUsunO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnUsunO.Location = new System.Drawing.Point(147, 260);
-            this.btnUsunO.Name = "btnUsunO";
-            this.btnUsunO.Size = new System.Drawing.Size(80, 29);
-            this.btnUsunO.TabIndex = 28;
-            this.btnUsunO.Text = "Usun";
-            this.btnUsunO.UseVisualStyleBackColor = false;
+            this.btnDodajK.Click += new System.EventHandler(this.btnDodajK_Click);
             // 
             // btnDodajO
             // 
             this.btnDodajO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.btnDodajO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnDodajO.Location = new System.Drawing.Point(40, 260);
+            this.btnDodajO.Location = new System.Drawing.Point(187, 158);
             this.btnDodajO.Name = "btnDodajO";
             this.btnDodajO.Size = new System.Drawing.Size(80, 29);
             this.btnDodajO.TabIndex = 27;
@@ -473,246 +387,58 @@
             this.btnDodajO.UseVisualStyleBackColor = false;
             this.btnDodajO.Click += new System.EventHandler(this.btnDodajO_Click);
             // 
-            // btnUsunS
-            // 
-            this.btnUsunS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            this.btnUsunS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUsunS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnUsunS.Location = new System.Drawing.Point(147, 123);
-            this.btnUsunS.Name = "btnUsunS";
-            this.btnUsunS.Size = new System.Drawing.Size(80, 29);
-            this.btnUsunS.TabIndex = 26;
-            this.btnUsunS.Text = "Usun";
-            this.btnUsunS.UseVisualStyleBackColor = false;
-            // 
             // btnDodajS
             // 
             this.btnDodajS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.btnDodajS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDodajS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.btnDodajS.Location = new System.Drawing.Point(40, 123);
+            this.btnDodajS.Location = new System.Drawing.Point(187, 55);
             this.btnDodajS.Name = "btnDodajS";
             this.btnDodajS.Size = new System.Drawing.Size(80, 29);
             this.btnDodajS.TabIndex = 25;
             this.btnDodajS.Text = "Dodaj";
             this.btnDodajS.UseVisualStyleBackColor = false;
-            this.btnDodajS.Click += new System.EventHandler(this.btnDodajS_Click);
-            // 
-            // lBialkP
-            // 
-            this.lBialkP.AutoSize = true;
-            this.lBialkP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lBialkP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lBialkP.Location = new System.Drawing.Point(715, 227);
-            this.lBialkP.Name = "lBialkP";
-            this.lBialkP.Size = new System.Drawing.Size(57, 15);
-            this.lBialkP.TabIndex = 24;
-            this.lBialkP.Text = "0g bialka";
-            // 
-            // lTlusP
-            // 
-            this.lTlusP.AutoSize = true;
-            this.lTlusP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lTlusP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lTlusP.Location = new System.Drawing.Point(628, 227);
-            this.lTlusP.Name = "lTlusP";
-            this.lTlusP.Size = new System.Drawing.Size(68, 15);
-            this.lTlusP.TabIndex = 23;
-            this.lTlusP.Text = "0g tluszcze";
-            // 
-            // lWeglP
-            // 
-            this.lWeglP.AutoSize = true;
-            this.lWeglP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lWeglP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lWeglP.Location = new System.Drawing.Point(511, 227);
-            this.lWeglP.Name = "lWeglP";
-            this.lWeglP.Size = new System.Drawing.Size(99, 15);
-            this.lWeglP.TabIndex = 22;
-            this.lWeglP.Text = "0g węglowodany";
-            // 
-            // lKcalP
-            // 
-            this.lKcalP.AutoSize = true;
-            this.lKcalP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lKcalP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalP.Location = new System.Drawing.Point(446, 227);
-            this.lKcalP.Name = "lKcalP";
-            this.lKcalP.Size = new System.Drawing.Size(39, 15);
-            this.lKcalP.TabIndex = 21;
-            this.lKcalP.Text = "0 kcal";
+            this.btnDodajS.Click += new System.EventHandler(this.btnDodajS_Click_1);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.label11.Location = new System.Drawing.Point(464, 195);
+            this.label11.Location = new System.Drawing.Point(40, 211);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(107, 20);
             this.label11.TabIndex = 20;
             this.label11.Text = "Podwieczorek";
-            // 
-            // lBialkDS
-            // 
-            this.lBialkDS.AutoSize = true;
-            this.lBialkDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lBialkDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lBialkDS.Location = new System.Drawing.Point(715, 91);
-            this.lBialkDS.Name = "lBialkDS";
-            this.lBialkDS.Size = new System.Drawing.Size(57, 15);
-            this.lBialkDS.TabIndex = 19;
-            this.lBialkDS.Text = "0g bialka";
-            // 
-            // lTlusDS
-            // 
-            this.lTlusDS.AutoSize = true;
-            this.lTlusDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lTlusDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lTlusDS.Location = new System.Drawing.Point(628, 91);
-            this.lTlusDS.Name = "lTlusDS";
-            this.lTlusDS.Size = new System.Drawing.Size(68, 15);
-            this.lTlusDS.TabIndex = 18;
-            this.lTlusDS.Text = "0g tluszcze";
-            // 
-            // lWeglDS
-            // 
-            this.lWeglDS.AutoSize = true;
-            this.lWeglDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lWeglDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lWeglDS.Location = new System.Drawing.Point(511, 91);
-            this.lWeglDS.Name = "lWeglDS";
-            this.lWeglDS.Size = new System.Drawing.Size(99, 15);
-            this.lWeglDS.TabIndex = 17;
-            this.lWeglDS.Text = "0g węglowodany";
-            // 
-            // lKcalDS
-            // 
-            this.lKcalDS.AutoSize = true;
-            this.lKcalDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lKcalDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalDS.Location = new System.Drawing.Point(446, 91);
-            this.lKcalDS.Name = "lKcalDS";
-            this.lKcalDS.Size = new System.Drawing.Size(39, 15);
-            this.lKcalDS.TabIndex = 16;
-            this.lKcalDS.Text = "0 kcal";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.label10.Location = new System.Drawing.Point(464, 58);
+            this.label10.Location = new System.Drawing.Point(40, 104);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 20);
             this.label10.TabIndex = 15;
             this.label10.Text = "Drugie Sniadanie";
-            // 
-            // lBialkK
-            // 
-            this.lBialkK.AutoSize = true;
-            this.lBialkK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lBialkK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lBialkK.Location = new System.Drawing.Point(312, 364);
-            this.lBialkK.Name = "lBialkK";
-            this.lBialkK.Size = new System.Drawing.Size(57, 15);
-            this.lBialkK.TabIndex = 14;
-            this.lBialkK.Text = "0g bialka";
-            // 
-            // lTlusK
-            // 
-            this.lTlusK.AutoSize = true;
-            this.lTlusK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lTlusK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lTlusK.Location = new System.Drawing.Point(215, 364);
-            this.lTlusK.Name = "lTlusK";
-            this.lTlusK.Size = new System.Drawing.Size(68, 15);
-            this.lTlusK.TabIndex = 13;
-            this.lTlusK.Text = "0g tluszcze";
-            // 
-            // lWeglK
-            // 
-            this.lWeglK.AutoSize = true;
-            this.lWeglK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lWeglK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lWeglK.Location = new System.Drawing.Point(98, 364);
-            this.lWeglK.Name = "lWeglK";
-            this.lWeglK.Size = new System.Drawing.Size(99, 15);
-            this.lWeglK.TabIndex = 12;
-            this.lWeglK.Text = "0g węglowodany";
-            // 
-            // lKcalK
-            // 
-            this.lKcalK.AutoSize = true;
-            this.lKcalK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lKcalK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalK.Location = new System.Drawing.Point(16, 364);
-            this.lKcalK.Name = "lKcalK";
-            this.lKcalK.Size = new System.Drawing.Size(39, 15);
-            this.lKcalK.TabIndex = 11;
-            this.lKcalK.Text = "0 kcal";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.label9.Location = new System.Drawing.Point(40, 332);
+            this.label9.Location = new System.Drawing.Point(40, 264);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 20);
             this.label9.TabIndex = 10;
             this.label9.Text = "Kolacja";
-            // 
-            // lBialkO
-            // 
-            this.lBialkO.AutoSize = true;
-            this.lBialkO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lBialkO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lBialkO.Location = new System.Drawing.Point(312, 227);
-            this.lBialkO.Name = "lBialkO";
-            this.lBialkO.Size = new System.Drawing.Size(57, 15);
-            this.lBialkO.TabIndex = 9;
-            this.lBialkO.Text = "0g bialka";
-            // 
-            // lTlusO
-            // 
-            this.lTlusO.AutoSize = true;
-            this.lTlusO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lTlusO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lTlusO.Location = new System.Drawing.Point(215, 227);
-            this.lTlusO.Name = "lTlusO";
-            this.lTlusO.Size = new System.Drawing.Size(68, 15);
-            this.lTlusO.TabIndex = 8;
-            this.lTlusO.Text = "0g tluszcze";
-            // 
-            // lWeglO
-            // 
-            this.lWeglO.AutoSize = true;
-            this.lWeglO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lWeglO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lWeglO.Location = new System.Drawing.Point(98, 227);
-            this.lWeglO.Name = "lWeglO";
-            this.lWeglO.Size = new System.Drawing.Size(99, 15);
-            this.lWeglO.TabIndex = 7;
-            this.lWeglO.Text = "0g węglowodany";
-            // 
-            // lKcalO
-            // 
-            this.lKcalO.AutoSize = true;
-            this.lKcalO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lKcalO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalO.Location = new System.Drawing.Point(16, 227);
-            this.lKcalO.Name = "lKcalO";
-            this.lKcalO.Size = new System.Drawing.Size(39, 15);
-            this.lKcalO.TabIndex = 6;
-            this.lKcalO.Text = "0 kcal";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.label8.Location = new System.Drawing.Point(40, 195);
+            this.label8.Location = new System.Drawing.Point(40, 158);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 20);
             this.label8.TabIndex = 5;
@@ -721,44 +447,44 @@
             // lBialkS
             // 
             this.lBialkS.AutoSize = true;
-            this.lBialkS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lBialkS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lBialkS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lBialkS.Location = new System.Drawing.Point(312, 91);
+            this.lBialkS.Location = new System.Drawing.Point(507, 403);
             this.lBialkS.Name = "lBialkS";
-            this.lBialkS.Size = new System.Drawing.Size(57, 15);
+            this.lBialkS.Size = new System.Drawing.Size(75, 18);
             this.lBialkS.TabIndex = 4;
             this.lBialkS.Text = "0g bialka";
             // 
             // lTlusS
             // 
             this.lTlusS.AutoSize = true;
-            this.lTlusS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lTlusS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lTlusS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lTlusS.Location = new System.Drawing.Point(215, 91);
+            this.lTlusS.Location = new System.Drawing.Point(365, 405);
             this.lTlusS.Name = "lTlusS";
-            this.lTlusS.Size = new System.Drawing.Size(68, 15);
+            this.lTlusS.Size = new System.Drawing.Size(94, 18);
             this.lTlusS.TabIndex = 3;
             this.lTlusS.Text = "0g tluszcze";
             // 
             // lWeglS
             // 
             this.lWeglS.AutoSize = true;
-            this.lWeglS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lWeglS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lWeglS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lWeglS.Location = new System.Drawing.Point(98, 91);
+            this.lWeglS.Location = new System.Drawing.Point(184, 403);
             this.lWeglS.Name = "lWeglS";
-            this.lWeglS.Size = new System.Drawing.Size(99, 15);
+            this.lWeglS.Size = new System.Drawing.Size(132, 18);
             this.lWeglS.TabIndex = 2;
             this.lWeglS.Text = "0g węglowodany";
             // 
             // lKcalL
             // 
             this.lKcalL.AutoSize = true;
-            this.lKcalL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lKcalL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lKcalL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalL.Location = new System.Drawing.Point(6, 91);
+            this.lKcalL.Location = new System.Drawing.Point(67, 405);
             this.lKcalL.Name = "lKcalL";
-            this.lKcalL.Size = new System.Drawing.Size(39, 15);
+            this.lKcalL.Size = new System.Drawing.Size(53, 18);
             this.lKcalL.TabIndex = 1;
             this.lKcalL.Text = "0 kcal";
             // 
@@ -793,7 +519,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(20)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(1000, 629);
+            this.ClientSize = new System.Drawing.Size(900, 629);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -833,35 +559,14 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnUsunP;
         private System.Windows.Forms.Button btnDodajP;
-        private System.Windows.Forms.Button btnUsunDS;
         private System.Windows.Forms.Button btnDodajDS;
-        private System.Windows.Forms.Button btnUsunK;
         private System.Windows.Forms.Button btnDodajK;
-        private System.Windows.Forms.Button btnUsunO;
         private System.Windows.Forms.Button btnDodajO;
-        private System.Windows.Forms.Button btnUsunS;
         private System.Windows.Forms.Button btnDodajS;
-        private System.Windows.Forms.Label lBialkP;
-        private System.Windows.Forms.Label lTlusP;
-        private System.Windows.Forms.Label lWeglP;
-        private System.Windows.Forms.Label lKcalP;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lBialkDS;
-        private System.Windows.Forms.Label lTlusDS;
-        private System.Windows.Forms.Label lWeglDS;
-        private System.Windows.Forms.Label lKcalDS;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lBialkK;
-        private System.Windows.Forms.Label lTlusK;
-        private System.Windows.Forms.Label lWeglK;
-        private System.Windows.Forms.Label lKcalK;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lBialkO;
-        private System.Windows.Forms.Label lTlusO;
-        private System.Windows.Forms.Label lWeglO;
-        private System.Windows.Forms.Label lKcalO;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lBialkS;
         private System.Windows.Forms.Label lTlusS;

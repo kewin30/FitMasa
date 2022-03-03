@@ -47,16 +47,26 @@ namespace FitMasa
         {
             System.Windows.Forms.Application.ExitThread();
         }
-
-        private void btnDodajS_Click(object sender, EventArgs e)
+        private double kalorieS = 0;
+        private double wegleS = 0;
+        private double tluszczeS = 0;
+        private double bialkoS = 0;
+        private void DodajSniadanie(object sender, double[] makro)
         {
-            Produkt produkt = new Produkt();
-            produkt.Show();
-            this.Hide();
+            this.Show();
+            kalorieS += makro[0];
+            bialkoS += makro[1];
+            wegleS += makro[2];
+            tluszczeS += makro[3];
+
+            lKcalL.Text = "Kalorie: " + kalorieS.ToString();
+            lWeglS.Text = "Weglowodany: " + wegleS.ToString();
+            lTlusS.Text = "Tluszcze: " + tluszczeS.ToString();
+            lBialkS.Text = "Bialko: " + bialkoS.ToString();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            double kalorie = Convert.ToDouble(Produkt.kalorie[0] + Produkt.kalorie[1]+ Produkt.kalorie[2] + Produkt.kalorie[3]);
+            /*double kalorie = Convert.ToDouble(Produkt.kalorie[0] + Produkt.kalorie[1]+ Produkt.kalorie[2] + Produkt.kalorie[3]);
             double wegle = Convert.ToDouble(Produkt.wegl[0] + Produkt.wegl[1]+ Produkt.wegl[2] + Produkt.wegl[3]);
             double tluszcze = Convert.ToDouble(Produkt.tluszcze[0] + Produkt.tluszcze[1]+ Produkt.tluszcze[2] + Produkt.tluszcze[3]);
             double bialko = Convert.ToDouble(Produkt.bialko[0] + Produkt.bialko[1]+ Produkt.bialko[2] + Produkt.bialko[3]);
@@ -64,14 +74,52 @@ namespace FitMasa
             lKcalL.Text = "Kalorie: "+kalorie.ToString();
             lWeglS.Text = "Weglowodany: "+wegle.ToString();
             lTlusS.Text = "Tluszcze: "+tluszcze.ToString();
-            lBialkS.Text= "Bialko: "+bialko.ToString();
+            lBialkS.Text= "Bialko: "+bialko.ToString();*/
         }
 
         private void btnDodajO_Click(object sender, EventArgs e)
         {
             Produkt produkt = new Produkt();
-            produkt.Show();
+            produkt.DodanoProdukt += DodajSniadanie;
+
             this.Hide();
+            produkt.Show();
+        }
+
+        private void btnDodajS_Click_1(object sender, EventArgs e)
+        {
+            Produkt produkt = new Produkt();
+            produkt.DodanoProdukt += DodajSniadanie;
+
+            this.Hide();
+            produkt.Show();
+        }
+
+        private void btnDodajK_Click(object sender, EventArgs e)
+        {
+            Produkt produkt = new Produkt();
+            produkt.DodanoProdukt += DodajSniadanie;
+
+            this.Hide();
+            produkt.Show();
+        }
+
+        private void btnDodajDS_Click(object sender, EventArgs e)
+        {
+            Produkt produkt = new Produkt();
+            produkt.DodanoProdukt += DodajSniadanie;
+
+            this.Hide();
+            produkt.Show();
+        }
+
+        private void btnDodajP_Click(object sender, EventArgs e)
+        {
+            Produkt produkt = new Produkt();
+            produkt.DodanoProdukt += DodajSniadanie;
+
+            this.Hide();
+            produkt.Show();
         }
     }
 }
