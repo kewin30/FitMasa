@@ -121,9 +121,9 @@ namespace FitMasa
             }
         }
        
-        private void btnSprawdz_Click(object sender, EventArgs e)
+        private async void btnSprawdz_Click(object sender, EventArgs e)
         {
-            Wyszukaj();
+           await Wyszukaj();
         }
 
 
@@ -182,6 +182,7 @@ namespace FitMasa
                 }
           
         }
+        public event EventHandler<double[]> listaEvent;
         private void button1_Click(object sender, EventArgs e)
         {
             automat(check1, num1, 0);
@@ -193,6 +194,9 @@ namespace FitMasa
             this.DodanoProdukt?.Invoke(this, new double[] { kalorie[1], bialko[1], wegl[1], tluszcze[1]});
             this.DodanoProdukt?.Invoke(this, new double[] { kalorie[2], bialko[2], wegl[2], tluszcze[2]});
             this.DodanoProdukt?.Invoke(this, new double[] { kalorie[3], bialko[3], wegl[3], tluszcze[3]});
+
+            this.listaEvent?.Invoke(this, new double[] { kalorie[0], bialko[0], wegl[0], tluszcze[0] });
+
 
 
             /* if (check1.Checked == false)

@@ -51,7 +51,7 @@ namespace FitMasa
         private double wegleS = 0;
         private double tluszczeS = 0;
         private double bialkoS = 0;
-        private void DodajSniadanie(object sender, double[] makro)
+        public void DodajSniadanie(object sender, double[] makro)
         {
             this.Show();
             kalorieS += makro[0];
@@ -88,8 +88,8 @@ namespace FitMasa
 
         private void btnDodajS_Click_1(object sender, EventArgs e)
         {
-            Produkt produkt = new Produkt();
-            produkt.DodanoProdukt += DodajSniadanie;
+           Produkt produkt = new Produkt();
+           produkt.DodanoProdukt += DodajSniadanie;
 
             this.Hide();
             produkt.Show();
@@ -120,6 +120,24 @@ namespace FitMasa
 
             this.Hide();
             produkt.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void DodajListe(object sender, double[] makro)
+        {
+            this.Show();
+            tescik[0] = makro[0];
+            lblSniadN.Text = tescik[0].ToString();
+
+        }
+        public List<double> tescik = new List<double>();
+        private void TEST_Click(object sender, EventArgs e)
+        {
+            Produkt produkt = new Produkt();
+            produkt.listaEvent += DodajListe;
         }
     }
 }

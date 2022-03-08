@@ -325,6 +325,7 @@
             this.btnCzytaj2.TabIndex = 6;
             this.btnCzytaj2.Text = "Stek z frytkami";
             this.btnCzytaj2.UseVisualStyleBackColor = false;
+            this.btnCzytaj2.Click += new System.EventHandler(this.btnCzytaj2_Click);
             // 
             // btnCzytaj3
             // 

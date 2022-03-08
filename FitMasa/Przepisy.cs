@@ -41,13 +41,46 @@ namespace FitMasa
         private void btnCzytaj1_Click(object sender, EventArgs e)
         {
             Artykul artykul = new Artykul();
-            artykul.Show();
+            Form1 x = new Form1();
+            artykul.DodajArtykul += x.DodajSniadanie;
+
             this.Hide();
+            artykul.Show();
         }
 
         private void btnZamknij_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnCzytaj2_Click(object sender, EventArgs e)
+        {
+            Artykul stek = new Artykul();
+            this.Hide();
+            stek.Show();
+            stek.label3.Text = "Stek z frytkami";
+            stek.label5.Text = @"Zamarynuj steki:
+
+        Kotlety opłucz, wysusz i zalej marynatą z oleju, sosu worchester i wyciśniętego czosnku 
+        - schowaj do lodówki najlepiej na noc.
+
+        Przygotuj masło:
+
+        Masło w temperaturze pokojowej wymieszaj widelcem z posiekaną kolendrą i wyciśniętym jednym ząbkiem czosnku, 
+        uformuj gruba roladę, owiń w folię spożywczą i włóż do lodówki najlepiej na noc.
+
+        Przygotuj frytki:
+
+        Obierz ziemniaki, pokrój w grube słupki grubości mniej więcej 1cm i opłucz pod zimną wodą.
+        Przełóż ziemniaki na papier kuchenny i dokładnie je przed smażeniem osusz.
+        Rozgrzej w garnku olej (bądź frytownicę do 180 stopni) - jest gotowy do 
+        smażenia, kiedy wokół włożonej doń drewnianej łyżki powstają bąble.
+        Frytki wkładamy do garnka w sitku bądź w sitku do gotowania na parze.
+        Smaż jw przez około 8 minut, aż będą lekko rumiane na krawędziach.
+        Następnie wyjmij je z oleju, przełóż do miski wyłożonej papierem kuchennym, odsącz z tłuszczu i dobrze wystudź.
+        Przełóż do pojemnika i zamroź.";
+            Form1 x = new Form1();
+            stek.DodajStek += x.DodajSniadanie;
         }
     }
 }

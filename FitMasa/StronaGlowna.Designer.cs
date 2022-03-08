@@ -47,6 +47,16 @@
             this.btnDania = new System.Windows.Forms.Button();
             this.btnStronaGlowna = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblSniadN1 = new System.Windows.Forms.Label();
+            this.lblSniadB1 = new System.Windows.Forms.Label();
+            this.lblSniadT1 = new System.Windows.Forms.Label();
+            this.lblWeglS1 = new System.Windows.Forms.Label();
+            this.lblSniadK1 = new System.Windows.Forms.Label();
+            this.lblSniadN = new System.Windows.Forms.Label();
+            this.lblSniadanieB = new System.Windows.Forms.Label();
+            this.lblSniadanieT = new System.Windows.Forms.Label();
+            this.lblSniadW = new System.Windows.Forms.Label();
+            this.lblSniadK = new System.Windows.Forms.Label();
             this.btnDodajP = new System.Windows.Forms.Button();
             this.btnDodajDS = new System.Windows.Forms.Button();
             this.btnDodajK = new System.Windows.Forms.Button();
@@ -63,6 +73,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.TEST = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -313,6 +324,17 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.TEST);
+            this.groupBox3.Controls.Add(this.lblSniadN1);
+            this.groupBox3.Controls.Add(this.lblSniadB1);
+            this.groupBox3.Controls.Add(this.lblSniadT1);
+            this.groupBox3.Controls.Add(this.lblWeglS1);
+            this.groupBox3.Controls.Add(this.lblSniadK1);
+            this.groupBox3.Controls.Add(this.lblSniadN);
+            this.groupBox3.Controls.Add(this.lblSniadanieB);
+            this.groupBox3.Controls.Add(this.lblSniadanieT);
+            this.groupBox3.Controls.Add(this.lblSniadW);
+            this.groupBox3.Controls.Add(this.lblSniadK);
             this.groupBox3.Controls.Add(this.btnDodajP);
             this.groupBox3.Controls.Add(this.btnDodajDS);
             this.groupBox3.Controls.Add(this.btnDodajK);
@@ -331,9 +353,100 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Transparent;
             this.groupBox3.Location = new System.Drawing.Point(200, 162);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(700, 467);
+            this.groupBox3.Size = new System.Drawing.Size(800, 467);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
+            // 
+            // lblSniadN1
+            // 
+            this.lblSniadN1.AutoSize = true;
+            this.lblSniadN1.Location = new System.Drawing.Point(311, 65);
+            this.lblSniadN1.Name = "lblSniadN1";
+            this.lblSniadN1.Size = new System.Drawing.Size(43, 13);
+            this.lblSniadN1.TabIndex = 43;
+            this.lblSniadN1.Text = "Nazwa:";
+            // 
+            // lblSniadB1
+            // 
+            this.lblSniadB1.AutoSize = true;
+            this.lblSniadB1.Location = new System.Drawing.Point(698, 65);
+            this.lblSniadB1.Name = "lblSniadB1";
+            this.lblSniadB1.Size = new System.Drawing.Size(38, 13);
+            this.lblSniadB1.TabIndex = 42;
+            this.lblSniadB1.Text = "Białka";
+            // 
+            // lblSniadT1
+            // 
+            this.lblSniadT1.AutoSize = true;
+            this.lblSniadT1.Location = new System.Drawing.Point(584, 65);
+            this.lblSniadT1.Name = "lblSniadT1";
+            this.lblSniadT1.Size = new System.Drawing.Size(51, 13);
+            this.lblSniadT1.TabIndex = 41;
+            this.lblSniadT1.Text = "Tłuszcze";
+            // 
+            // lblWeglS1
+            // 
+            this.lblWeglS1.AutoSize = true;
+            this.lblWeglS1.Location = new System.Drawing.Point(497, 65);
+            this.lblWeglS1.Name = "lblWeglS1";
+            this.lblWeglS1.Size = new System.Drawing.Size(41, 13);
+            this.lblWeglS1.TabIndex = 40;
+            this.lblWeglS1.Text = "Węgle:";
+            // 
+            // lblSniadK1
+            // 
+            this.lblSniadK1.AutoSize = true;
+            this.lblSniadK1.Location = new System.Drawing.Point(404, 65);
+            this.lblSniadK1.Name = "lblSniadK1";
+            this.lblSniadK1.Size = new System.Drawing.Size(42, 13);
+            this.lblSniadK1.TabIndex = 39;
+            this.lblSniadK1.Text = "Kalorie:";
+            // 
+            // lblSniadN
+            // 
+            this.lblSniadN.AutoSize = true;
+            this.lblSniadN.Location = new System.Drawing.Point(311, 26);
+            this.lblSniadN.Name = "lblSniadN";
+            this.lblSniadN.Size = new System.Drawing.Size(43, 13);
+            this.lblSniadN.TabIndex = 38;
+            this.lblSniadN.Text = "Nazwa:";
+            // 
+            // lblSniadanieB
+            // 
+            this.lblSniadanieB.AutoSize = true;
+            this.lblSniadanieB.Location = new System.Drawing.Point(698, 26);
+            this.lblSniadanieB.Name = "lblSniadanieB";
+            this.lblSniadanieB.Size = new System.Drawing.Size(38, 13);
+            this.lblSniadanieB.TabIndex = 37;
+            this.lblSniadanieB.Text = "Białka";
+            // 
+            // lblSniadanieT
+            // 
+            this.lblSniadanieT.AutoSize = true;
+            this.lblSniadanieT.Location = new System.Drawing.Point(584, 26);
+            this.lblSniadanieT.Name = "lblSniadanieT";
+            this.lblSniadanieT.Size = new System.Drawing.Size(51, 13);
+            this.lblSniadanieT.TabIndex = 36;
+            this.lblSniadanieT.Text = "Tłuszcze";
+            // 
+            // lblSniadW
+            // 
+            this.lblSniadW.AutoSize = true;
+            this.lblSniadW.Location = new System.Drawing.Point(497, 26);
+            this.lblSniadW.Name = "lblSniadW";
+            this.lblSniadW.Size = new System.Drawing.Size(41, 13);
+            this.lblSniadW.TabIndex = 35;
+            this.lblSniadW.Text = "Węgle:";
+            this.lblSniadW.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // lblSniadK
+            // 
+            this.lblSniadK.AutoSize = true;
+            this.lblSniadK.Location = new System.Drawing.Point(404, 26);
+            this.lblSniadK.Name = "lblSniadK";
+            this.lblSniadK.Size = new System.Drawing.Size(42, 13);
+            this.lblSniadK.TabIndex = 34;
+            this.lblSniadK.Text = "Kalorie:";
             // 
             // btnDodajP
             // 
@@ -482,7 +595,7 @@
             this.lKcalL.AutoSize = true;
             this.lKcalL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lKcalL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(238)))), ((int)(((byte)(254)))));
-            this.lKcalL.Location = new System.Drawing.Point(67, 405);
+            this.lKcalL.Location = new System.Drawing.Point(67, 403);
             this.lKcalL.Name = "lKcalL";
             this.lKcalL.Size = new System.Drawing.Size(53, 18);
             this.lKcalL.TabIndex = 1;
@@ -509,17 +622,27 @@
             this.pictureBox5.Location = new System.Drawing.Point(233, 13);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(651, 130);
+            this.pictureBox5.Size = new System.Drawing.Size(741, 130);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
+            // 
+            // TEST
+            // 
+            this.TEST.Location = new System.Drawing.Point(462, 269);
+            this.TEST.Name = "TEST";
+            this.TEST.Size = new System.Drawing.Size(75, 23);
+            this.TEST.TabIndex = 44;
+            this.TEST.Text = "TEST";
+            this.TEST.UseVisualStyleBackColor = true;
+            this.TEST.Click += new System.EventHandler(this.TEST_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(20)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(900, 629);
+            this.ClientSize = new System.Drawing.Size(1000, 629);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -580,6 +703,17 @@
         private System.Windows.Forms.Button btnZamknij;
         private System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.Label lKcalL;
+        private System.Windows.Forms.Label lblSniadW;
+        private System.Windows.Forms.Label lblSniadK;
+        private System.Windows.Forms.Label lblSniadN1;
+        private System.Windows.Forms.Label lblSniadB1;
+        private System.Windows.Forms.Label lblSniadT1;
+        private System.Windows.Forms.Label lblWeglS1;
+        private System.Windows.Forms.Label lblSniadK1;
+        private System.Windows.Forms.Label lblSniadN;
+        private System.Windows.Forms.Label lblSniadanieB;
+        private System.Windows.Forms.Label lblSniadanieT;
+        private System.Windows.Forms.Button TEST;
     }
 }
 
